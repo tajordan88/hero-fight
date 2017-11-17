@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { ArenaComponent } from './arena/arena.component';
+import { HeroService } from './hero.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { ArenaComponent } from './arena/arena.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
